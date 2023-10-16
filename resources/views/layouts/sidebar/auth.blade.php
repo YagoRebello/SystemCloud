@@ -25,6 +25,9 @@
                     <li>
                         <a class="nav-link" href="{{route('Exames.index')}}"><i class="bi bi-heart-pulse-fill"></i> Exames</a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="{{route('Pacientes.index')}}"><i class="bi bi-person-heart"></i> Pacientes</a>
+                    </li>
                 </ul>
             </div>
         </div>

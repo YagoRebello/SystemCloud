@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\GruposUsuarioController;
 use App\Http\Controllers\LaudoController;
 use App\Http\Controllers\ExamesController;
+use App\Http\Controllers\PacienteController;
 use App\Http\Controllers\Site\SiteController;
 use Illuminate\Support\Facades\Route;
 
@@ -44,6 +45,14 @@ Route::middleware('auth')->group(function () {
         Route::post('/Exames', 'store')->name('Exames.store');
         Route::get('/Exames/add', 'create')->name('Exames.create');
         Route::put('/Exames/update/{id}', 'update')->name('Exames.update');
+    });
+
+    Route::controller(PacienteController::class)->group(function (){
+        Route::get('/Pacientes/edit/{id}', 'edit')->name('Pacientes.edit');
+        Route::get('/Pacientes/index', 'index')->name('Pacientes.index');
+        Route::post('/Pacientes', 'store')->name('Pacientes.store');
+        Route::get('/Pacientes/add', 'create')->name('Pacientes.create');
+        Route::put('/Pacientes/update/{id}', 'update')->name('Pacientes.update');
     });
 
     Route::controller(HomeController::class)->group(function () {
