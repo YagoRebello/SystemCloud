@@ -1,0 +1,16 @@
+$theme-colors: (
+    "primary": rgba(0,0,82,1),
+    "primary_light": rgba(52, 49, 224, 0.945),
+    "alternative": rgba(91,227,255,1),
+    "secondary": rgba(0,194,255,1),
+    "secondary_light": rgba(81, 208, 240, 0.747),
+    "surface": rgba(240,255,255,1),
+    "warning": rgb(250, 136, 43),
+    "warning_light": rgba(241, 167, 106, 0.932),
+    "danger": rgb(231, 18, 36),
+    "danger_light": rgba(255, 130, 140, 0.856),
+    "success": rgba(0,255,96,1),
+    "success_light": rgb(146, 247, 176),
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
